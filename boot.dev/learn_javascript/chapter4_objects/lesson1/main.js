@@ -25,11 +25,15 @@ messageLength: The length of the message parameter
  */
 function createMessage(phoneNumber, message) {
   // ?
-  return {
+
+  let ret = {
     phoneNumber,
     message,
     messageLength:message.length
   };
+  console.log(`Input: ${message, phoneNumber}, Output:`, ret);
+
+  return  ret;
 }
 
 export { createMessage };
